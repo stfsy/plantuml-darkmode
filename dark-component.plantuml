@@ -1,0 +1,32 @@
+!include colors.plantuml
+
+skinparam Handwritten true
+skinparam Shadowing false
+
+skinparam backgroundColor white
+skinparam RectangleBackgroundColor darkGrey
+skinparam ArrowColor lightGrey
+skinparam FolderBackgroundColor darkGrey
+skinparam PackageBackgroundColor darkGrey
+skinparam ActorBorderColor darkGrey
+skinparam BoundaryBorderColor darkGrey
+skinparam ArrowColor black
+
+skinparam InterfaceBackgroundColor darkGrey
+skinparam InterfaceBorderColor black
+
+!function $whiteText($text)
+!return $quotes("<font color=#FFFFFF>"+$text+"</font>")
+!endfunction
+
+!function $boldText($text, $color)
+!return $quotes("<b><font color="+$color+">"+$text+"</font></b>")
+!endfunction
+
+!function $lightGreyText($text)
+!return $quotes("<font color="+lightGrey+">"+$text+"</font>")
+!endfunction
+
+!function $quotes($text)
+!return '"' + $text + '"'
+!endfunction
