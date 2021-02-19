@@ -1,6 +1,6 @@
 @startuml microservice-controller-tasks
 
-!include dark-component.plantuml
+!include https://raw.githubusercontent.com/stfsy/plantuml-darkmode/master/dark-component.plantuml
 
 rectangle $whiteText("Services") {
     rectangle Database blue {

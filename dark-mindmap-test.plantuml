@@ -2,7 +2,7 @@
 
 title ABCDEF
 
-!include dark-mindmap.plantuml
+!include https://raw.githubusercontent.com/stfsy/plantuml-darkmode/master/dark-mindmap.plantuml
 
 +[blue] Transportation
 ++[green] Planes Red
