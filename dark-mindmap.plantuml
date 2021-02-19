@@ -1,0 +1,35 @@
+!include colors.plantuml
+
+skinparam TitleFontColor white
+skinparam ArrowColor lightGrey
+skinparam Shadowing false
+skinparam backgroundColor darkGrey
+
+<style>
+mindmapDiagram {
+  node {
+    BackGroundColor lightGrey
+    RoundCorner 10
+    LineColor darkGrey
+    LineThickness 1.5
+  }
+  :depth(1) {
+  }
+}
+</style>
+
+!function $whiteText($text)
+!return $quotes("<font color=#FFFFFF>"+$text+"</font>")
+!endfunction
+
+!function $boldText($text, $color)
+!return $quotes("<b><font color="+$color+">"+$text+"</font></b>")
+!endfunction
+
+!function $lightGreyText($text)
+!return $quotes("<font color="+lightGrey+">"+$text+"</font>")
+!endfunction
+
+!function $quotes($text)
+!return '"' + $text + '"'
+!endfunction
