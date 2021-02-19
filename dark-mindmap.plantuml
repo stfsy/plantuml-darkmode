@@ -1,4 +1,4 @@
-!include colors.plantuml
+!include https://raw.githubusercontent.com/stfsy/plantuml-darkmode/master/colors.plantuml
 
 skinparam TitleFontColor white
 skinparam ArrowColor lightGrey
