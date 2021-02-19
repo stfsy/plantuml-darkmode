@@ -1,0 +1,50 @@
+@startuml microservice-controller-tasks
+
+!include dark-component.plantuml
+
+rectangle $whiteText("Services") {
+    rectangle Database blue {
+
+    }
+}
+
+rectangle $whiteText("Clients") {
+    rectangle Client blue {
+
+    }
+}
+
+rectangle $whiteText("Microservice") {
+    rectangle Provider red {
+
+    }
+
+    rectangle Controller green {
+
+    }
+
+    rectangle Service orange {
+
+    }
+
+    rectangle Cache yellow {
+
+    }
+    rectangle RetryTemplate yellow {
+
+    }
+}
+
+Client -> Controller
+
+Controller -> Service
+' Models <-. Controller
+
+Service -> Provider
+
+' Converter <-. Service
+Provider -> Database
+Provider --> Cache
+Provider --> RetryTemplate
+
+@enduml

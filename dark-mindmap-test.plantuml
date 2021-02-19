@@ -1,0 +1,15 @@
+@startmindmap mindmaps
+
+title ABCDEF
+
+!include dark-mindmap.plantuml
+
++[blue] Transportation
+++[green] Planes Red
++++[yellow] Airbus
++++[orange] Boeing
++++[red] Cessna
++++[violet] Cessna
++++[teal] Abc
+
+@endmindmap
